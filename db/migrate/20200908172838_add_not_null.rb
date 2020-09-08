@@ -1,5 +1,6 @@
 class AddNotNull < ActiveRecord::Migration[5.2]
   def change
+    
     change_column_null :properties, :address, null: false
     change_column_null :properties, :age, null: false
     change_column_null :properties, :note, null: false
