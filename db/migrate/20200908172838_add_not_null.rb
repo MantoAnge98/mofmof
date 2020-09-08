@@ -5,7 +5,6 @@ class AddNotNull < ActiveRecord::Migration[5.2]
     change_column_null :properties, :note, null: false
     change_column_null :properties, :property_name, null: false
     change_column_null :properties, :rent, null: false
-
     change_column_null :nearest_stations, :route_name, null: false
     change_column_null :nearest_stations, :station_name, null: false
     change_column_null :nearest_stations, :time, null: false

@@ -11,7 +11,6 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2020_09_08_172838) do
-
   create_table "nearest_stations", force: :cascade do |t|
     t.string "route_name", null: false
     t.string "station_name", null: false
