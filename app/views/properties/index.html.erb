@@ -10,6 +10,7 @@
       <th colspan="3"></th>
     </tr>
   <% @properties.each do |property| %>
+    
     <tr>
       <td><%= property.property_name %></td>
       <td><%= "#{property.rent.to_s(:delimited)} yen" %></td>
