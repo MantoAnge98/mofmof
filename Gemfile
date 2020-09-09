@@ -8,6 +8,12 @@ gem 'rails', '5.2.3'
 
 gem 'coffee-rails'
 
+gem 'bootstrap-sass'
+
+gem 'jquery-rails'
+
+gem 'sassc-rails'
+
 #gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
