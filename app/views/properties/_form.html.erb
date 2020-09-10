@@ -8,31 +8,41 @@
       </ul>
     </div>
   <% end %>
-  <%= f.label :property_name, 'Property Name' %><br>
-  <%= f.text_field :property_name %><br>
-  <%= f.label :rent, 'rent' %><br>
-  <%= f.text_field :rent %>yen<br>
-  <%= f.label :address, 'address (e.g. of a residence)' %><br>
-  <%= f.text_field :address %><br>
-  <%= f.label :age, 'age of construction' %><br>
-  <%= f.text_field :age %>year (e.g. ADA)<br>
-  <%= f.label :note, 'Note' %><br>
-  <%= f.text_area :note %><br>
+<div class="conatiner">
+  <div class="row">
+    <div class="col-xs-3"></div>
+    <div class="col-xs-6">
+      <%= f.label :property_name, 'Property Name' %><br>
+      <%= f.text_field :property_name, class: "form-control", placeholder: "property_name" %>
+      <%= f.label :rent, 'rent' %>
+      <%= f.number_field :rent , class: "form-control"%>yen
+      <%= f.label :address, 'address (e.g. of a residence)' %>
+      <%= f.text_field :address , class: "form-control"%>
+      <%= f.label :age, 'age of construction' %>
+      <%= f.number_field :age %>year (e.g. ADA)
+      <%= f.label :note, 'Note' %>
+      <%= f.text_area :note %>
 
-  <hr>
 
-  <%= f.fields_for :nearest_stations do |nearest_station| %>
-    <h4>
-      nearest station
-      <%= nearest_station.index + 1 %>
-    </h4>
-    <%= nearest_station.label :route_name, 'line name' %><br>
-    <%= nearest_station.text_field :route_name %><br>
-    <%= nearest_station.label :station_name, 'station name' %><br>
-    <%= nearest_station.text_field :station_name %><br>
-    <%= nearest_station.label :time, 'number of steps' %><br>
-    <%= nearest_station.text_field :time %>division<br>
-  <% end %>
+      <%= f.fields_for :nearest_stations do |nearest_station| %>
+        <h2>
+          nearest station
+          <%= nearest_station.index + 1 %>
+        </h2>
+        <%= nearest_station.label :route_name, 'line name' %>
+        <%= nearest_station.text_field :route_name , class: "form-control"%>
+        <%= nearest_station.label :station_name, 'station name' %>
+        <%= nearest_station.text_field :station_name , class: "form-control"%>
+        <%= nearest_station.label :time, 'number of steps' %>
+        <%= nearest_station.number_field :time , class: "form-control"%>division
+      <% end %>
 
-  <%= f.submit 'Register' %><br>
-<% end %>
+      <%= f.submit 'Register' , class: "btn btn-success"%>
+    <% end %>
+
+    
+    </div>
+    <div class="col-xs-3"></div>
+  </div>
+</div>
+  

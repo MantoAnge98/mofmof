@@ -1,0 +1,55 @@
+
+@import "bootstrap";
+
+ body {
+  font-family: 'Calibri';
+}
+
+.nav-bar{
+  margin-bottom: 20px;
+}
+
+.nav-item{
+  padding: 5px;
+}
+
+
+.footer{
+  /*position: absolute;*/
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; 
+  color: white;
+  text-align: center;
+  background-color: #343a40!important;
+  margin-top: 25px; 
+  line-height: 60px;
+  
+}
+
+.text-muted{
+  color: #fff!important;
+}
+
+a .nav-link{
+  text-decoration: none;
+  color: #fff!important;
+  font-weight: 400!important;
+}
+
+.static-top{
+  background-color:#343a40!important;
+  font-weight: 700;
+}
+
+.navbar-brand{
+  color: white;
+}
+
+.btn-secondary{
+  background-color:#343a40!important;
+  color: white;
+  margin-top: 10px;
+  font-size: 15px;
+}
