@@ -40,7 +40,7 @@ class PropertiesController < ApplicationController
 
   def destroy
     @property.destroy
-    redirect_to properties_path
+    redirect_to new_property_path, notice: "Deleted !"
   end
 
   private
